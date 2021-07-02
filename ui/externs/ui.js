@@ -75,7 +75,8 @@ shaka.extern.UIVolumeBarColors;
  *   doubleClickForFullscreen: boolean,
  *   enableKeyboardPlaybackControls: boolean,
  *   enableFullscreenOnRotation: boolean,
- *   forceLandscapeOnFullscreen: boolean
+ *   forceLandscapeOnFullscreen: boolean,
+ *   enablePlayPauseVideoScreen: boolean,
  * }}
  *
  * @property {!Array.<string>} controlPanelElements
@@ -147,6 +148,13 @@ shaka.extern.UIVolumeBarColors;
  *   enters fullscreen.  Note that this behavior is based on an experimental
  *   browser API, and may not work on all platforms.
  *   Defaults to true.
+ * @property {boolean} enablePlayPausePresentation
+ *   If true, the player will run as usual.
+ *   If false, the player will not paused when the user clicks on the video
+ *   presentation.
+ *   <br>
+ *   This is useful if the player is used in a streaming method, which
+ *   does not allow the user to pause.
  * @exportDoc
  */
 shaka.extern.UIConfiguration;

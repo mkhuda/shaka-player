@@ -594,7 +594,7 @@ shaka.ui.Controls = class extends shaka.util.FakeEventTarget {
    * Play or pause the current presentation.
    */
   playPausePresentation() {
-    if (!this.enabled_) {
+    if (!this.config_.enablePlayPausePresentation) {
       return;
     }
 
